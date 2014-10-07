@@ -1,0 +1,27 @@
+{
+  "name": "connect-weinre-injector",
+  "version": "0.0.0",
+  "description": "A connect middleware to inject weinre script into any page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netputer/connect-weinre-injector.git"
+  },
+  "keywords": [
+    "connect",
+    "middleware",
+    "weinre"
+  ],
+  "author": "NetPuter Lin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netputer/connect-weinre-injector/issues"
+  },
+  "homepage": "https://github.com/netputer/connect-weinre-injector",
+  "dependencies": {
+    "connect-injector": "^0.4.1"
+  }
+}
