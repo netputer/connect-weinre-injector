@@ -23,5 +23,10 @@
   "homepage": "https://github.com/netputer/connect-weinre-injector",
   "dependencies": {
     "connect-injector": "^0.4.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-bump": "0.0.13",
+    "grunt-conventional-changelog": "^1.1.0"
   }
 }
