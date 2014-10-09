@@ -1,3 +1,12 @@
+<a name="0.1.2"></a>
+### 0.1.2 (2014-10-09)
+
+
+#### Bug Fixes
+
+* Some file `content-type` will be `undefined` ([455efbe4](https://github.com/netputer/connect-weinre-injector/commit/455efbe4818c90d476690999814bac82e8ad612c))
+
+
 <a name="0.1.1"></a>
 ### 0.1.1 (2014-10-07)
 
