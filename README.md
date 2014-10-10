@@ -4,7 +4,7 @@ A connect middleware to inject weinre script into any page.
 
 ## Getting Started
 
-Install the module with: `npm install connect-injector --save-dev`
+Install the module with: `npm install connect-weinre-injector --save-dev`
 
 ## Grunt Example
 
