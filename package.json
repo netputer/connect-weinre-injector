@@ -1,6 +1,6 @@
 {
   "name": "connect-weinre-injector",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A connect middleware to inject weinre script into any page.",
   "main": "index.js",
   "scripts": {
