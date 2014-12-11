@@ -10,9 +10,17 @@ module.exports = function (options) {
     return injector(function (req, res) {
         return (res.getHeader('content-type') || '').indexOf('text/html') > -1;
     }, function (content, req, res, callback) {
-        var scriptSrc = 'http://' + options.host + ':' + options.port + '/target/target-script-min.js#' + options.id;
+        var snippet = "<script>(function () {" +
+            "if (document.getElementById('weinre-script')) { return false; }" +
+            "var w = document.createElement('script'); " +
+            "w.id = 'weinre-script';" +
+            "w.type = 'text/javascript'; w.async = true; " +
+            "w.src = '//' + (location.host || '" + options.host + "').split(':')[0] + ':" + options.port + "/target/target-script-min.js#" + options.id + "';" +
+            "var s = document.getElementsByTagName('script')[0];" +
+            "s.parentNode.insertBefore(w, s); " +
+            "}());</script>";
 
-        content = content.toString().replace('</head>', '<script src="' + scriptSrc + '"></script></head>');
+        content = content.toString().replace('</body>', snippet + "</body>");
 
         callback(null, content);
     });
