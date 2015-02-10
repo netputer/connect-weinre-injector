@@ -15,7 +15,7 @@ module.exports = function (options) {
             "var w = document.createElement('script'); " +
             "w.id = 'weinre-script';" +
             "w.type = 'text/javascript'; w.async = true; " +
-            "w.src = '//' + (location.host || '" + options.host + "').split(':')[0] + ':" + options.port + "/target/target-script-min.js#" + options.id + "';" +
+            "w.src = '//" + options.host + ":" + options.port + "/target/target-script-min.js#" + options.id + "';" +
             "var s = document.getElementsByTagName('script')[0];" +
             "s.parentNode.insertBefore(w, s); " +
             "}());</script>";
